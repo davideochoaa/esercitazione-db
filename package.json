@@ -1,0 +1,23 @@
+{
+  "name": "database-esercitazione",
+  "version": "1.0.0",
+  "description": "descrizione database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gino Paoli",
+  "license": "ISC",
+  "devDependencies": {
+    "@prisma/client": "^3.14.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.35",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16",
+    "prettier-plugin-prisma": "^3.14.0",
+    "prisma": "^3.14.0",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.6.4"
+  }
+}
