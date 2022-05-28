@@ -4,20 +4,29 @@
   "description": "descrizione database",
   "main": "index.js",
   "scripts": {
+    "dev": "npx tsc --watch & npx nodemon ./dist/index.js",
+    "migrate": "npx prisma migrate dev && npx prisma generate",
+    "migrate.make": "npx prisma migrate dev --create-only",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Gino Paoli",
   "license": "ISC",
   "devDependencies": {
     "@prisma/client": "^3.14.0",
+    "@types/bcrypt": "^5.0.0",
     "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.8",
     "@types/node": "^17.0.35",
-    "dotenv": "^16.0.1", 
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "nodemon": "^2.0.16",
     "prettier-plugin-prisma": "^3.14.0",
     "prisma": "^3.14.0",
     "ts-node": "^10.8.0",
     "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "jsonwebtoken": "^8.5.1"
   }
 }
